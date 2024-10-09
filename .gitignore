@@ -1,0 +1,9 @@
+# annoying macOS files
+.DS_Store
+
+# python scripts
+__pycache__/
+
+# word documents
+*.doc
+*.docx
