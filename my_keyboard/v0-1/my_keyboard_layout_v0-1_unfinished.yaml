@@ -1,0 +1,38 @@
+points:
+  key:
+    width: 17.5
+    height: 16.5
+    spread: 17.5
+    padding: 16.5
+  zones:
+    main:
+      columns:
+        pinkie:
+          key:
+            splay: 15.177
+            #origin: [0,0]
+        ring:
+          key:
+            splay: -14.58
+            spread: 19.63
+            stagger: 4.41
+        midlle:
+          key:
+            splay: -8.1
+            spread: 19.06
+            stagger: 4.1
+        index:
+          key:
+            splay: -6.5
+            spread: 19.24
+            stagger: -5.03
+        thumb:
+          key:
+            splay: 0
+            spread: 17.664
+            stagger: -2.261
+      rows:
+        top:
+        center:
+        bottom:
+    

@@ -21,3 +21,8 @@ Some concepts that will be explained more in depth later on:
 * How to get all the functionality of a full keyboard with less keys?
 * Ergonomic considerations when designing a custom keyboard
 
+Finally, there is a difference between creating a custom keyboard and creating
+a custom ergonomic keyboard. In the latter, it is important to know the reasons
+why each choice is made to improve the ergonomics so that one uses it correctly.
+For example, having a split keyboard can help with shoulder strain but not if
+placed very close together or very far appart.
