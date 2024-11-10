@@ -1,3 +1,3 @@
 # custom-keyboards
 
-Documentation for customizing and building my own keyboards. 
+Documentation for designing and building custom keyboards. 
