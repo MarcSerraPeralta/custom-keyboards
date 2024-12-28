@@ -1,0 +1,51 @@
+points:
+  key:
+    width: cx
+    height: cy
+    spread: cx
+    padding: cy
+  zones:
+    main:
+      columns:
+        pinkie:
+          key:
+            splay: 14.89
+            origin: [0,0]
+        ring:
+          key:
+            splay: -14.89
+            spread: 20.066
+            stagger: 4.328
+        midlle:
+          key:
+            splay: -7.55
+            spread: 19.25 
+            stagger: 4.452 
+        index:
+          key:
+            splay: -7.81
+            spread: 18.92
+            stagger: -4.985
+        thumb:
+          key:
+            splay: 0
+            spread: cx
+            stagger: -1.62
+      rows:
+        bottom:
+        center:
+        top:
+    thumbcluster:
+      anchor:
+        ref: main_pinkie_bottom
+        shift: [46, -34.06]
+        rotate: -14.6
+      columns:
+        thumbleft:
+        thumbright:
+          key:
+            splay: -14.84
+            spread: 20.15
+            stagger: -2.78
+      rows:
+        one:
