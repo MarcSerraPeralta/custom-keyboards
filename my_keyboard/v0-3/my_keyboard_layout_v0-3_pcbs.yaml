@@ -1,0 +1,124 @@
+points:
+  key:
+    width: cx
+    height: cy
+    spread: cx
+    padding: cy
+    bind: 1
+  zones:
+    main:
+      columns:
+        pinkie:
+          key:
+            splay: 14.89
+            origin: [0,0]
+            bind: [1, 30, 1, 1]
+        ring:
+          key:
+            splay: -14.89
+            spread: 20.066
+            stagger: 4.328
+            bind: [1, 20, 1, 1]
+        midlle:
+          key:
+            splay: -7.55
+            spread: 19.25 
+            stagger: 4.452 
+            bind: [1, 1, 9.5, 1]
+        index:
+          key:
+            splay: -7.81
+            spread: 18.92
+            stagger: -4.985
+            bind: [1, 1, 1, 20]
+        farindex:
+          key:
+            splay: 0
+            spread: cx
+            stagger: -1.62
+            bind: [1, 1, 10, 1]
+      rows:
+        bottom:
+        center:
+        top:
+    thumbcluster:
+      anchor:
+        ref: main_pinkie_bottom
+        shift: [64.53, -41.89]
+        rotate: -32.99
+      columns:
+        thumbleft:
+          key:
+            bind: [1, 1, 1, 1]
+        thumbright:
+          key:
+            splay: -3.2
+            spread: 18.48
+            stagger: -4.675
+            bind: [1, 1, 1, 10]
+      rows:
+        one:
+
+outlines:
+  keycaps:
+    - what: rectangle
+      where: true
+      size: [cx, cy]
+      operation: stack
+  raw:
+    - what: rectangle
+      where: true
+      bound: true
+      size: [cx, cy]
+    #- what: outline
+    #  name: keycaps
+    #  operation: stack
+  first:
+    - what: rectangle
+      where: 
+        ref: main_pinkie_bottom
+        orient: -33
+        shift: [38.5, -1.35]
+      size: [82.5, 24]
+    - what: rectangle
+      where: 
+        ref: main_pinkie_bottom
+        orient: -33
+        shift: [58.5, 10.35]
+      size: [30.5, 10]
+    - what: outline
+      name: raw
+      operation: add
+    #- what: outline
+    #  name: keycaps
+    #  operation: stack
+  second:
+    - what: outline
+      name: first
+      expand: 2.5
+      joints: 0
+    #- what: outline
+    #  name: keycaps
+    #  operation: stack
+pcbs:
+  main_pcb:
+    outlines:
+      main:
+        outline: second
+    footprints:
+      choc_hotswap:
+        what: choc
+        where: true
+        params:
+          from: ADD_THIS
+          to: GND
+          keycaps: true
+          hotswap: true
+          reverse: true # reversible
+      microcontroller:
+        what: ceoloide/mcu_supermini_nrf52840
+        where:
+          ref: main_farindex_bottom
+        params:
+          reversible: true
+          #reverse_mount: true

@@ -64,6 +64,10 @@ Here it says how to install O-rings to choc keys:
 https://blog.zsa.io/robins-repairs-o-rings/
 
 
+**Footprints of the switches**
+https://github.com/daprice/keyswitches.pretty
+
+
 Types of keycaps
 ----------------
 

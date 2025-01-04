@@ -22,5 +22,8 @@ Reversible PCBs
 
 Many split designs rely on a "reversible" PCB design. 
 This lets you use the same circuit board for both the left and right half of the 
-keyboard, but introduces some complexity into routing all the traces on the board. (HOW?)
-I still need to look into this...
+keyboard, but introduces some complexity into routing all the traces on the board. 
+The reason is that the "reversibility" should be done by mirroring the PCB, but 
+in our reality we can only flip the board 180 degrees, which is not a full mirroring.
+See the document "reversible_pcb_explanation.pdf" for a better description and
+solution to the problem.

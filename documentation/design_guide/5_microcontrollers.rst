@@ -158,6 +158,9 @@ Comment: these footprints are used by Ergogen to know the size and characteristi
 of the microcontroller board in order to generate the PCB files. 
 Although it does not have a footprint for the Nice!nano, there
 are available footprints around GitHub.
+https://github.com/ceoloide/ergogen-footprints/blob/main/mcu_nice_nano.js
+https://github.com/Giraffasax/SpUnLy58/blob/main/Ergogen/Footprints/nice_nano.js
+https://github.com/dohn-joh/alias/blob/main/ergogen/footprints/mcu_nice_nano.js
 
 **Elite-C / pro-micro**
 - Uses QMK / VIA (firmware)
