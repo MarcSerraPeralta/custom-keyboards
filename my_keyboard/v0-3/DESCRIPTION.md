@@ -28,8 +28,9 @@ Description of my custom keyboard
 - 2 lithium batteries (AliExpress) = ~5-10€
 - 2 PCBs (minimum order of 5, JLCPCB) = ~12€
 - 2 cases (own 3D printer, 200g of plastic) = ~5€
+- 2 reset and power buttons (AliExpress) = 2€ + 1€ = 3€
 
-TOTAL = ~90€
+TOTAL = ~95€
 
 Notes: 
 * I couldn't find a cheaper alternative for the switches and keycaps in AliExpress,

@@ -173,39 +173,57 @@ pcbs:
           hotswap: true
           reverse: true # reversible
       microcontroller:
-        what: ceoloide/mcu_supermini_nrf52840
+        what: mcu_supermini_nrf52840
         where:
           ref: main_farindex_bottom
           shift: [cx/2+17.78/2+3, -33/2+cy/2+2*cy]
+      mounting_hole_1:
+        what: mounting_hole_plated
+        where:
+          shift: [4.1, 39]
+      mounting_hole_2:
+        what: mounting_hole_plated
+        where:
+          shift: [14, -2.75]
+      mounting_hole_3:
+        what: mounting_hole_plated
+        where:
+          shift: [54, 46.5]
+      mounting_hole_4:
+        what: mounting_hole_plated
+        where:
+          shift: [59.5, -24.5]
+      mounting_hole_5:
+        what: mounting_hole_plated
+        where:
+          shift: [95.5, -23.75]
+      mounting_hole_6:
+        what: mounting_hole_plated
+        where:
+          shift: [86, 0.75]
       battery_connector:
-        what: ceoloide/battery_connector_jst_ph_2
+        what: battery_connector_jst_ph_2
         where:
           ref: main_farindex_bottom
           shift: [cx/2+17.78/2+1.5, 0]
           rotate: 180
         params:
-          BAT_P: RAW
-      mounting_hole_1:
-        what: ceoloide/mounting_hole_plated
+          BAT_P: PWR_SW
+          #reversible: true # not needed because the pads have holes
+      reset_switch:
+        what: wuerth-434121025816
         where:
-          shift: [4.1, 39]
-      mounting_hole_2:
-        what: ceoloide/mounting_hole_plated
-        where:
-          shift: [14, -2.75]
-      mounting_hole_3:
-        what: ceoloide/mounting_hole_plated
-        where:
-          shift: [54, 46.5]
-      mounting_hole_4:
-        what: ceoloide/mounting_hole_plated
-        where:
-          shift: [59.5, -24.5]
-      mounting_hole_5:
-        what: ceoloide/mounting_hole_plated
-        where:
-          shift: [95.5, -23.75]
-      mounting_hole_6:
-        what: ceoloide/mounting_hole_plated
-        where:
-          shift: [86, 0.75]
+          ref: main_farindex_bottom
+          shift: [cx/2+17.78/2+1.5, -7]
+        params:
+          r1: GND
+          r2: RST
+      power_switch:
+        what: power_switch_smd_side
+        where: 
+          ref: main_farindex_bottom
+          shift: [30.1, 0]
+        params:
+          from: RAW
+          to: PWR_SW
+          reversible: true
