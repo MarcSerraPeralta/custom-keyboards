@@ -221,7 +221,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "main_pcb.kicad_pro",
+    "filename": "main_pcb_correct_routing.kicad_pro",
     "version": 1
   },
   "net_settings": {

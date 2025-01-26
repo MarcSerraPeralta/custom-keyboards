@@ -14,9 +14,9 @@ points:
             origin: [0,0]
             bind: [1, 30, 1, 1]
           rows:
-            bottom.pin_net: P10
-            center.pin_net: P5
-            top.pin_net: P1
+            bottom.pin_net: P14
+            center.pin_net: P9
+            top.pin_net: P4
         ring:
           key:
             splay: -14.89
@@ -24,9 +24,9 @@ points:
             stagger: 4.328
             bind: [1, 20, 1, 1]
           rows:
-            bottom.pin_net: P14
-            center.pin_net: P6
-            top.pin_net: P0
+            bottom.pin_net: P15
+            center.pin_net: P8
+            top.pin_net: P3
         midlle:
           key:
             splay: -7.55
@@ -34,7 +34,7 @@ points:
             stagger: 4.452 
             bind: [1, 1, 9.5, 1]
           rows:
-            bottom.pin_net: P15
+            bottom.pin_net: P18
             center.pin_net: P7
             top.pin_net: P2
         index:
@@ -44,9 +44,9 @@ points:
             stagger: -4.985
             bind: [1, 1, 1, 20]
           rows:
-            bottom.pin_net: P16
-            center.pin_net: P8
-            top.pin_net: P3
+            bottom.pin_net: P19
+            center.pin_net: P6
+            top.pin_net: P1
         farindex:
           key:
             splay: 0
@@ -54,9 +54,9 @@ points:
             stagger: -1.62
             bind: [1, 1, 10, 1]
           rows:
-            bottom.pin_net: P18
-            center.pin_net: P9
-            top.pin_net: P4
+            bottom.pin_net: P20
+            center.pin_net: P5
+            top.pin_net: P0
     thumbcluster:
       anchor:
         ref: main_pinkie_bottom
@@ -67,7 +67,7 @@ points:
           key:
             bind: [1, 1, 1, 1]
           rows:
-            one.pin_net: P20
+            one.pin_net: P16
         thumbright:
           key:
             splay: -3.2
@@ -75,7 +75,7 @@ points:
             stagger: -4.675
             bind: [1, 1, 1, 10]
           rows:
-            one.pin_net: P21
+            one.pin_net: P10
 
 outlines:
   keycaps:
@@ -124,8 +124,8 @@ outlines:
     - what: rectangle
       where:
         ref: main_farindex_bottom
-        shift: [cx, 7]
-      size: [22+4, 73]
+        shift: [cx+5.05, 11.75]
+      size: [22+4, 63.5]
     # polygon for the keycaps
     - what: outline
       name: raw
@@ -176,7 +176,7 @@ pcbs:
         what: mcu_supermini_nrf52840
         where:
           ref: main_farindex_bottom
-          shift: [cx/2+17.78/2+3, -33/2+cy/2+2*cy]
+          shift: [cx/2+17.78/2+8, -33/2+cy/2+cy+5]
       mounting_hole_1:
         what: mounting_hole_plated
         where:
@@ -196,17 +196,21 @@ pcbs:
       mounting_hole_5:
         what: mounting_hole_plated
         where:
-          shift: [95.5, -23.75]
+          shift: [98.25, -24.25]
       mounting_hole_6:
         what: mounting_hole_plated
         where:
-          shift: [86, 0.75]
+          shift: [83, -8.5]
+      mounting_hole_7:
+        what: mounting_hole_plated
+        where:
+          shift: [98.25, 28.5]
       battery_connector:
         what: battery_connector_jst_ph_2
         where:
           ref: main_farindex_bottom
-          shift: [cx/2+17.78/2+1.5, 0]
-          rotate: 180
+          shift: [cx/2+17.78/2+9, 40]
+          rotate: 0
         params:
           BAT_P: PWR_SW
           #reversible: true # not needed because the pads have holes
@@ -214,7 +218,8 @@ pcbs:
         what: wuerth-434121025816
         where:
           ref: main_farindex_bottom
-          shift: [cx/2+17.78/2+1.5, -7]
+          shift: [cx/2+17.78/2-1, 40]
+          rotate: 0
         params:
           r1: GND
           r2: RST
@@ -222,8 +227,8 @@ pcbs:
         what: power_switch_smd_side
         where: 
           ref: main_farindex_bottom
-          shift: [30.1, 0]
+          shift: [35.1, 38]
         params:
-          from: RAW
-          to: PWR_SW
+          from: PWR_SW
+          to: RAW
           reversible: true
