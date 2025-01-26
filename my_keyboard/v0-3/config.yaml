@@ -46,7 +46,7 @@ points:
           rows:
             bottom.pin_net: P19
             center.pin_net: P6
-            top.pin_net: P1
+            top.pin_net: P0
         farindex:
           key:
             splay: 0
@@ -56,7 +56,7 @@ points:
           rows:
             bottom.pin_net: P20
             center.pin_net: P5
-            top.pin_net: P0
+            top.pin_net: P1
     thumbcluster:
       anchor:
         ref: main_pinkie_bottom
