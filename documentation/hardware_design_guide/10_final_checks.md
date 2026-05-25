@@ -1,5 +1,4 @@
-Final checks
-============
+# Final checks
 
 This is a list of the final checks to perform to the final PCB and other files.
 

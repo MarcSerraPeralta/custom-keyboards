@@ -45,4 +45,5 @@ These variables are dependent between each other, for example:
 - curved keyboards cannot use a single (flat) PCB
 
 Therefore, it can be difficult to find the best design fulfilling a set of requirements.
-The design choices and restrictions that I have made are described in ``design_guide/``.
+The design choices and restrictions that I have made are described in 
+`hardware_design_guide/` and `firmware_design_guide`.
