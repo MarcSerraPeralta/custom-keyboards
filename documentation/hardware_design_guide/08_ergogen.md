@@ -29,3 +29,22 @@ config.yaml for your Ergogen config. Secondly, we need to change how we call Erg
 Instead of the usual ergogen config.yaml command, we need to pass our entire folder to Ergogen.
 Without further ado, let's fire up Ergogen and provide it with our project folder: `ergogen .`" 
 from [flatfootfox](https://flatfootfox.com/ergogen-part4-footprints-cases/)
+
+
+### Ergogen tutorial
+
+I recommend first looking into [this example guide](https://flatfootfox.com/ergogen-introduction/)
+and once the general structure of ergogen is known, then look into the
+[official Ergogen documentation](https://docs.ergogen.xyz/).
+
+For a general vibe, I also recommend watching [Ben Vallack's videos](https://www.youtube.com/watch?v=UKfeJrRIcxw).
+
+Also, in my designs, I first started with the Ergogne basics, e.g. keyboard layout,
+and then moved into more complex stuff, e.g. wiring microcontroller.
+The different versions go in increasing complexity.
+
+
+### Assigning pins to keys
+
+Consiously assign microcontroller's pins to keys to avoid having traces (wires) in the PCB overlapping
+each other.

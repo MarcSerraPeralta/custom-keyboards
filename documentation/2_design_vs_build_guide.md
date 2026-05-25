@@ -47,3 +47,7 @@ These variables are dependent between each other, for example:
 Therefore, it can be difficult to find the best design fulfilling a set of requirements.
 The design choices and restrictions that I have made are described in 
 `hardware_design_guide/` and `firmware_design_guide`.
+
+I also recommand watching [this Ben Vallack video](https://www.youtube.com/watch?v=M_VuXVErD6E)
+which covers all the steps for designing and building a custom keyboard.
+
